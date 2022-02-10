@@ -1,0 +1,45 @@
+/** CSS Variables **/
+:root{
+    --common-text-color: darkblue;
+    --container-color: #89CFF0;
+  }
+
+/** Universal Styling **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--common-text-color);
+  }
+
+body {
+    background-color: lightgray;  
+}
+
+/** Header Styling **/
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+}
+
+header h1{
+    background-color: var(--container-color);
+}
+
+header nav {
+    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-flex;
+}
+
+header nav ul li a {
+    color: var(--container-color);
+}
