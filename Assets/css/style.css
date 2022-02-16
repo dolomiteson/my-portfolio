@@ -1,6 +1,6 @@
 /** CSS Variables **/
 :root{
-    --common-text-color: darkblue;
+    --common-text-color: midnightblue;
     --container-color: #89CFF0;
   }
 
@@ -16,8 +16,8 @@ body {
     background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;  
 }
-/** Header Stylings **/
 
+/** Header Stylings **/
 header {
     background-color: black;
     height: 100px;
@@ -27,6 +27,7 @@ header {
 .header-child{
     height: 70px;
     margin-top: 10px;
+    margin-right: 10px;
     line-height: 2;
     font-size: 40px;
 }
@@ -75,6 +76,49 @@ header nav ul li a {
 }
 
 /** Section Stylings **/
-.section{
+.content{
+    margin: 10px 0px;
     display: flex;
+}
+
+.content h2{
+    width: 20%;
+    border-right: 5px solid var(--common-text-color);
+    font-size: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.content section{
+    width: 80%;
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+article {
+    margin: 10px 30px;
+}
+
+article p {
+    text-indent: 2%;
+}
+
+.work-main {
+    margin: 10px 30px;
+    height: 600px;
+    border: 5px solid var(--container-color);
+    background-image: url("../images/main-work.png");
+}
+
+.work-main h3 {
+    width: fit-content;
+    background-color: var(--container-color);
+}
+
+.content section ul{
+    width: 80%;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 3;
 }
