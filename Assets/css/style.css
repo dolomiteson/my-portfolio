@@ -28,7 +28,8 @@ header {
     height: 70px;
     margin-top: 10px;
     margin-right: 10px;
-    font-size: 3vw;
+    margin-bottom: 20px;
+    font-size: 40px;
     text-align: center;
     line-height: 2;
 }
@@ -37,6 +38,7 @@ header h1{
     background-color: var(--container-color);
     width: max-content;
     color: black;
+    padding: 8px 8px 8px 79px
 }
 
 header nav {
@@ -112,19 +114,19 @@ article p {
    flex-wrap: wrap;
 }
 
+.link-main {
+    flex: 2 0 90%;
+}
+
 .work-main {
     margin: 10px 30px;
     height: 600px;
     border: 5px solid var(--container-color);
-    background-image: url("../images/main-work.png");
-    flex: 2 0 90%;
+    position: relative;
 }
 
-.work-main h3 {
-    width: fit-content;
-    background-color: var(--container-color);
-    position: relative;
-    margin-top: 525px;
+.link-other{
+    flex: 1 0 40%;
 }
 
 .work-other {
@@ -132,15 +134,42 @@ article p {
     height: 200px;
     border: 5px solid var(--container-color);
     background-image: url("../images/main-work.png");
-    flex: 1 0 40%;
-}
-
-.work-other h3 {
-    width: fit-content;
-    background-color: var(--container-color);
     position: relative;
 }
 
+.work-labels {
+    height:fit-content;
+    width: fit-content;
+    background-color: var(--container-color);
+    position: absolute;
+    bottom: 5%;
+}
+
+/** Work Items Pictures **/
+#work-pic-1 {
+    background-image: url("../images/main-work.png");
+}
+
+#work-pic-2 {
+    background-image: url("../images/its-coming.png");
+    background-size: cover;
+    background-position: top;
+}
+
+#work-pic-3 {
+    background-image: url("../images/almost-here.png");
+    background-size: cover;
+}
+
+#work-pic-4 {
+    background-image: url("../images/dont-judge.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#work-pic-5 {
+    background-image: url("../images/run-buddy.png");
+}
 .content section ul{
     width: 80%;
     list-style-type: none;
@@ -148,3 +177,9 @@ article p {
     justify-content: space-between;
     line-height: 3;
 }
+
+/* @media screen and (max-width: 1120px) {
+    .work-content{
+        width: 60%;
+    }
+} */
