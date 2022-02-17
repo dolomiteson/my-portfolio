@@ -28,14 +28,14 @@ header {
     height: 70px;
     margin-top: 10px;
     margin-right: 10px;
+    font-size: 3vw;
+    text-align: center;
     line-height: 2;
-    font-size: 40px;
 }
 
 header h1{
     background-color: var(--container-color);
-    width: 25%;
-    text-align: right;
+    width: max-content;
     color: black;
 }
 
@@ -61,17 +61,20 @@ header nav ul li a {
 .hero{
     height: 300px;
     background-image: url("../images/hero.jpg");
+    background-size: cover;
+    position: relative;
 }
 
 .hero h2{
     background-color: var(--container-color);
     width: fit-content;
+    padding: 10px;
     color: black;
     font-size: 30px;
     border: solid 3px var(--common-text-color);
-    position: relative;
-    top: 230px;
-    left: 80%;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
 
 }
 
@@ -103,16 +106,39 @@ article p {
     text-indent: 2%;
 }
 
+.work-content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
 .work-main {
     margin: 10px 30px;
     height: 600px;
     border: 5px solid var(--container-color);
     background-image: url("../images/main-work.png");
+    flex: 2 0 90%;
 }
 
 .work-main h3 {
     width: fit-content;
     background-color: var(--container-color);
+    position: relative;
+    margin-top: 525px;
+}
+
+.work-other {
+    margin: 10px 30px;
+    height: 200px;
+    border: 5px solid var(--container-color);
+    background-image: url("../images/main-work.png");
+    flex: 1 0 40%;
+}
+
+.work-other h3 {
+    width: fit-content;
+    background-color: var(--container-color);
+    position: relative;
 }
 
 .content section ul{
