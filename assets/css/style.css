@@ -1,0 +1,180 @@
+/** CSS Variables **/
+:root{
+    --common-text-color: midnightblue;
+    --container-color: #89CFF0;
+  }
+
+/** Universal Styling **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--common-text-color);
+  }
+
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+/** Header Stylings **/
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+}
+
+.header-child{
+    height: 70px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 2;
+}
+
+header h1{
+    background-color: var(--container-color);
+    width: max-content;
+    color: black;
+    padding: 8px 8px 8px 79px
+}
+
+header nav {
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-flex;
+}
+
+header nav ul li a {
+    color: var(--container-color);
+}
+
+/** Hero Stylings **/
+.hero{
+    height: 300px;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.hero h2{
+    background-color: var(--container-color);
+    width: fit-content;
+    padding: 10px;
+    color: black;
+    font-size: 30px;
+    border: solid 3px var(--common-text-color);
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+
+}
+
+/** Section Stylings **/
+.content{
+    margin: 10px 0px;
+    display: flex;
+}
+
+.content h2{
+    width: 20%;
+    border-right: 5px solid var(--common-text-color);
+    font-size: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.content section{
+    width: 80%;
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+article {
+    margin: 10px 30px;
+}
+
+article p {
+    text-indent: 2%;
+}
+
+.work-content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.link-main {
+    flex: 2 0 90%;
+}
+
+.work-main {
+    margin: 10px 30px;
+    height: 600px;
+    border: 5px solid var(--container-color);
+    position: relative;
+}
+
+.link-other{
+    flex: 1 0 40%;
+}
+
+.work-other {
+    margin: 10px 30px;
+    height: 200px;
+    border: 5px solid var(--container-color);
+    background-image: url("../images/main-work.png");
+    position: relative;
+}
+
+.work-labels {
+    height:fit-content;
+    width: fit-content;
+    background-color: var(--container-color);
+    position: absolute;
+    bottom: 5%;
+}
+
+/** Work Items Pictures **/
+#work-pic-1 {
+    background-image: url("../images/main-work.png");
+}
+
+#work-pic-2 {
+    background-image: url("../images/its-coming.png");
+    background-size: cover;
+    background-position: top;
+}
+
+#work-pic-3 {
+    background-image: url("../images/almost-here.png");
+    background-size: cover;
+}
+
+#work-pic-4 {
+    background-image: url("../images/dont-judge.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#work-pic-5 {
+    background-image: url("../images/run-buddy.png");
+}
+.content section ul{
+    width: 80%;
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 3;
+}
